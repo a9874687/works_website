@@ -1,0 +1,116 @@
+//-------------------模組載入-------------//
+@import "reset";
+
+//-----------------------------------全域-----------------------------------//
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+}
+
+//-----------------------------------header-----------------------------------//
+#header{
+    background-color: #fff;
+    height: 60px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1640px;
+        margin:0 auto;
+        
+        .logo{
+            line-height: 60px;
+            h1{
+                a{
+                    display: block;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+        }
+        .menu{
+                line-height: 60px;
+            ul{
+                display: flex;
+                margin-right: 50px;
+                li{
+                    margin-left: 30px;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: black;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----------------------------------作品集-----------------------------------//
+#portfolio{
+    background-color: #f5f5f5;
+    height: 800px;
+    .container{
+        max-width: 1140px;
+        margin:0 auto;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 10%;
+            li{
+                width: 31.3333%;
+                margin-right: 1%;
+                margin-left: 1%;
+                margin-top: 5%;
+                .works-box{
+                    position: relative;
+                    width: 100%;
+                    max-width: 320px;
+                    height: 100%;
+                    max-height: 200px;
+                    a{
+                        display: block;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .info{
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transform: translate(0%,0%);
+                            font-weight: bold;
+                            font-size:16px;
+                            color: #fff;
+                            line-height: 25px;
+                            text-shadow: 0px 0px 3px hsla(0, 0%, 0%, 0.7);
+                            background-color: rgba(0, 0, 0, 0.6);
+                            letter-spacing: 0.75px;
+                            opacity: 0;
+                            &:hover{
+                                opacity: 1;
+                                transition: all 1s;
+                            }
+                            .info-main{
+                                transform: translate(0%,100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+  }
+}
+//-----------------------------------footer-----------------------------------//
+#footer{
+    background-color: #f5f5f5;
+    height: 100px;
+    .copyright{
+        text-align: center;
+        span{
+            line-height: 100px;
+        }
+    }
+}
