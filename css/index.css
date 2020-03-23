@@ -66,12 +66,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #header .container .logo {
   line-height: 60px;
-  margin-left: 20px;
 }
 
 #header .container .logo h1 a {
